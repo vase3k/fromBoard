@@ -1,3 +1,7 @@
 "use strict";
 
-window.addEventListener("DOMContentLoaded", async () => {});
+import burgerMenu from "./module/burgerMenu";
+
+window.addEventListener("DOMContentLoaded", async () => {
+    burgerMenu();
+});

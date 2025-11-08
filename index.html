@@ -4,10 +4,81 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>title</title>
+        <title>FromBoard Delivery</title>
     </head>
     <body>
-        <header></header>
+        <header class="overflow-hidden rounded-b-2xl bg-sky py-2">
+            <div class="container">
+                <div
+                    class="grid grid-cols-[max-content_max-content_1fr_max-content] items-center justify-items-end"
+                >
+                    <img
+                        class="mr-1"
+                        src="/src/img/header/logo.svg"
+                        class="fill-siren"
+                        alt="company logo"
+                    />
+                    <p class="font-lgblack md:font-2xlblack text-main">
+                        FromBoard Delivery
+                    </p>
+                    <a
+                        class="font-xlblack md:font-2xlblack mr-4"
+                        href="tel:+78001234567"
+                        >+7 (800) 123 45-67</a
+                    >
+                    <div
+                        id="burger__close"
+                        class="group relative h-4 w-6 *:absolute *:h-1 *:w-6 *:rounded-sm *:bg-siren *:transition-all *:duration-500"
+                    >
+                        <div
+                            class="top-0 group-hover:top-1/2 group-hover:-translate-y-1/2 group-hover:rotate-45"
+                        ></div>
+                        <div
+                            class="top-1/2 -translate-y-1/2 group-hover:opacity-0"
+                        ></div>
+                        <div
+                            class="bottom-0 group-hover:bottom-1/2 group-hover:translate-y-1/2 group-hover:-rotate-45"
+                        ></div>
+                    </div>
+                </div>
+
+                <div
+                    id="burger__menu"
+                    class="group max-h-36 pt-3 pb-6 transition-all duration-500 data-active:max-h-0 data-active:pt-0 data-active:pb-0"
+                >
+                    <div
+                        class="h-0.5 rounded-xs bg-siren text-main group-data-active:opacity-0"
+                    ></div>
+                    <ul
+                        class="font-basebold my-3 grid h-11 auto-cols-max grid-flow-col items-center justify-center gap-x-6"
+                    >
+                        <li>Калькулятор</li>
+                        <li>О нас</li>
+                        <li>Гарантии</li>
+                        <li>Отзывы</li>
+                        <li class="h-full">
+                            <button
+                                class="h-full w-[196px] rounded-sm bg-violet px-7 py-2.5 text-sky"
+                            >
+                                Оставить заявку
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="h-0.5 rounded-xs bg-siren text-main"></div>
+                    <ul
+                        class="font-smregular mt-3 grid h-10 auto-cols-max grid-flow-col justify-center gap-6 text-center"
+                    >
+                        <li class="max-w-[185px]">
+                            Доставляем товары из заграницы в Россию
+                        </li>
+                        <li class="max-w-[185px]">
+                            Стоимость от 550 рублей за заказ
+                        </li>
+                        <li>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <main></main>
         <footer></footer>
         <script type="module" src="/src/js/script.js"></script>
