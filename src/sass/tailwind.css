@@ -2,40 +2,1250 @@
 
 @layer base {
     body {
-        @apply overflow-x-hidden leading-tight;
+        @apply font-formular leading-tight;
     }
 
     html {
-        @apply overflow-x-hidden scroll-smooth;
+        @apply scroll-smooth;
     }
 }
 
 @theme {
     --color-*: initial;
+    --color-dark: #4b5563;
+    --color-dark10: #0000001a;
+    --color-dark25: #00000040;
+    --color-deside: #6b7280;
+    --color-devil: #333333;
+    --color-edid: #ede9fe;
+    --color-enim: #f9fafb;
+    --color-etan: #4c1d95;
+    --color-fonce: #e5e7eb;
+    --color-fone: #f9fafb;
+    --color-gray: #d9d9d9;
+    --color-lavender: #c4b5fd;
+    --color-level: #9747ff;
+    --color-main: #111827;
+    --color-may: #5b21b6;
+    --color-muple: #7c3aed;
+    --color-murundo: #a5b4fc;
+    --color-opensky: #f9fafb;
+    --color-purple: #6d28d9;
+    --color-second: #000000;
+    --color-siren: #a78bfa;
+    --color-sky: #f9fafb;
+    --color-stone: #9ca3af;
+    --color-under: #ddd6fe;
+    --color-violet: #8b5cf6;
+    --color-walter: #f9fafb;
+    --color-white: #ffffff;
+    --color-why: #f5f3ff;
 
-    --font-sen: "Sen", sans-serif;
+    --font-formular: "Formular", sans-serif;
 
     --breakpoint-*: initial;
-    --breakpoint-md: 48rem;
-    --breakpoint-lg: 90rem;
+    --breakpoint-xl: 120rem; /* 1920px */
+    --breakpoint-lg: 96rem; /* 1536px */
+    --breakpoint-md: 64rem; /* 1024px */
+    --breakpoint-sm: 47.375rem; /* 758px */
 }
 
 @layer components {
     .container {
         @apply mx-auto w-full max-w-90 px-5 md:max-w-[688px] md:px-10 lg:max-w-[1296px] lg:px-[72px];
     }
+
+    .font-xslight {
+        @apply font-formular text-xs leading-4 font-light;
+    }
+
+    .font-xsregular {
+        @apply font-formular text-xs leading-4 font-normal;
+    }
+
+    .font-xsmedium {
+        @apply font-formular text-xs leading-4 font-medium;
+    }
+
+    .font-xsbold {
+        @apply font-formular text-xs leading-4 font-bold;
+    }
+
+    .font-xsblack {
+        @apply font-formular text-xs leading-4 font-black;
+    }
+
+    .font-smlight {
+        @apply font-formular text-sm leading-5 font-light;
+    }
+
+    .font-smregular {
+        @apply font-formular text-sm leading-5 font-normal;
+    }
+
+    .font-smmedium {
+        @apply font-formular text-sm leading-5 font-medium;
+    }
+
+    .font-smbold {
+        @apply font-formular text-sm leading-5 font-bold;
+    }
+
+    .font-smblack {
+        @apply font-formular text-sm leading-5 font-black;
+    }
+
+    .font-baselight {
+        @apply font-formular text-base leading-6 font-light;
+    }
+
+    .font-baseregular {
+        @apply font-formular text-base leading-6 font-normal;
+    }
+
+    .font-basemedium {
+        @apply font-formular text-base leading-6 font-medium;
+    }
+
+    .font-basebold {
+        @apply font-formular text-base leading-6 font-bold;
+    }
+
+    .font-baseblack {
+        @apply font-formular text-base leading-6 font-black;
+    }
+
+    .font-lgregular {
+        @apply font-formular text-lg leading-7 font-normal;
+    }
+
+    .font-lgmedium {
+        @apply font-formular text-lg leading-7 font-medium;
+    }
+
+    .font-lgbold {
+        @apply font-formular text-lg leading-7 font-bold;
+    }
+
+    .font-lgblack {
+        @apply font-formular text-lg leading-7 font-black;
+    }
+
+    .font-lglight {
+        @apply font-formular text-lg leading-7 font-light;
+    }
+
+    .font-xllight {
+        @apply font-formular text-xl leading-7 font-light;
+    }
+
+    .font-xlregular {
+        @apply font-formular text-xl leading-7 font-normal;
+    }
+
+    .font-xlmedium {
+        @apply font-formular text-xl leading-7 font-medium;
+    }
+
+    .font-xlbold {
+        @apply font-formular text-xl leading-7 font-bold;
+    }
+
+    .font-xlblack {
+        @apply font-formular text-xl leading-7 font-black;
+    }
+
+    .font-2xllight {
+        @apply font-formular text-2xl leading-8 font-light;
+    }
+
+    .font-2xlregular {
+        @apply font-formular text-2xl leading-8 font-normal;
+    }
+
+    .font-2xlmedium {
+        @apply font-formular text-2xl leading-8 font-medium;
+    }
+
+    .font-2xlbold {
+        @apply font-formular text-2xl leading-8 font-bold;
+    }
+
+    .font-2xlblack {
+        @apply font-formular text-2xl leading-8 font-black;
+    }
+
+    .font-3xllight {
+        @apply font-formular text-3xl leading-9 font-light;
+    }
+
+    .font-3xlregular {
+        @apply font-formular text-3xl leading-9 font-normal;
+    }
+
+    .font-3xlmedium {
+        @apply font-formular text-3xl leading-9 font-medium;
+    }
+
+    .font-3xlbold {
+        @apply font-formular text-3xl leading-9 font-bold;
+    }
+
+    .font-3xlblack {
+        @apply font-formular text-3xl leading-9 font-black;
+    }
+
+    .font-4xllight {
+        @apply font-formular text-4xl leading-10 font-light;
+    }
+
+    .font-4xlregular {
+        @apply font-formular text-4xl leading-10 font-normal;
+    }
+
+    .font-4xlmedium {
+        @apply font-formular text-4xl leading-10 font-medium;
+    }
+
+    .font-4xlbold {
+        @apply font-formular text-4xl leading-10 font-bold;
+    }
+
+    .font-4xlblack {
+        @apply font-formular text-4xl leading-10 font-black;
+    }
+
+    .font-5xllight {
+        @apply font-formular text-5xl leading-none font-light;
+    }
+
+    .font-5xlregular {
+        @apply font-formular text-5xl leading-none font-normal;
+    }
+
+    .font-5xlmedium {
+        @apply font-formular text-5xl leading-none font-medium;
+    }
+
+    .font-5xlbold {
+        @apply font-formular text-5xl leading-none font-bold;
+    }
+
+    .font-5xlblack {
+        @apply font-formular text-5xl leading-none font-black;
+    }
+
+    .font-6xllight {
+        @apply font-formular text-6xl leading-none font-light;
+    }
+
+    .font-6xlregular {
+        @apply font-formular text-6xl leading-none font-normal;
+    }
+
+    .font-6xlrmedium {
+        @apply font-formular text-6xl leading-none font-medium;
+    }
+
+    .font-6xlbold {
+        @apply font-formular text-6xl leading-none font-bold;
+    }
+
+    .font-6xlblack {
+        @apply font-formular text-6xl leading-none font-black;
+    }
+
+    .font-7xllight {
+        @apply font-formular text-7xl leading-none font-light;
+    }
+
+    .font-7xlregular {
+        @apply font-formular text-7xl leading-none font-normal;
+    }
+
+    .font-7xlmedium {
+        @apply font-formular text-7xl leading-none font-medium;
+    }
+
+    .font-7xlbold {
+        @apply font-formular text-7xl leading-none font-bold;
+    }
+
+    .font-7xlblack {
+        @apply font-formular text-7xl leading-none font-black;
+    }
+
+    .font-8xllight {
+        @apply font-formular text-8xl leading-none font-light;
+    }
+
+    .font-8xlregular {
+        @apply font-formular text-8xl leading-none font-normal;
+    }
+
+    .font-8xlmedium {
+        @apply font-formular text-8xl leading-none font-medium;
+    }
+
+    .font-8xlbold {
+        @apply font-formular text-8xl leading-none font-bold;
+    }
+
+    .font-8xlblack {
+        @apply font-formular text-8xl leading-none font-black;
+    }
+
+    .font-9xllight {
+        @apply font-formular text-9xl leading-none font-light;
+    }
+
+    .font-9xlregular {
+        @apply font-formular text-9xl leading-none font-normal;
+    }
+
+    .font-9xlmedium {
+        @apply font-formular text-9xl leading-none font-medium;
+    }
+
+    .font-9xlbold {
+        @apply font-formular text-9xl leading-none font-bold;
+    }
+
+    .font-9xlblack {
+        @apply font-formular text-9xl leading-none font-black;
+    }
 }
 
 @layer utilities {
-    @media (min-width: 48rem) {
-        .md\:font-heading78px {
-            @apply font-sen text-[78px] font-bold;
+    @media (min-width: 47.375rem) {
+        .sm\:font-xslight {
+            @apply font-formular text-xs leading-4 font-light;
+        }
+        .sm\:font-xsregular {
+            @apply font-formular text-xs leading-4 font-normal;
+        }
+        .sm\:font-xsmedium {
+            @apply font-formular text-xs leading-4 font-medium;
+        }
+        .sm\:font-xsbold {
+            @apply font-formular text-xs leading-4 font-bold;
+        }
+        .sm\:font-xsblack {
+            @apply font-formular text-xs leading-4 font-black;
+        }
+
+        .sm\:font-smlight {
+            @apply font-formular text-sm leading-5 font-light;
+        }
+        .sm\:font-smregular {
+            @apply font-formular text-sm leading-5 font-normal;
+        }
+        .sm\:font-smmedium {
+            @apply font-formular text-sm leading-5 font-medium;
+        }
+        .sm\:font-smbold {
+            @apply font-formular text-sm leading-5 font-bold;
+        }
+        .sm\:font-smblack {
+            @apply font-formular text-sm leading-5 font-black;
+        }
+
+        .sm\:font-baselight {
+            @apply font-formular text-base leading-6 font-light;
+        }
+        .sm\:font-baseregular {
+            @apply font-formular text-base leading-6 font-normal;
+        }
+        .sm\:font-basemedium {
+            @apply font-formular text-base leading-6 font-medium;
+        }
+        .sm\:font-basebold {
+            @apply font-formular text-base leading-6 font-bold;
+        }
+        .sm\:font-baseblack {
+            @apply font-formular text-base leading-6 font-black;
+        }
+
+        .sm\:font-lglight {
+            @apply font-formular text-lg leading-7 font-light;
+        }
+        .sm\:font-lgregular {
+            @apply font-formular text-lg leading-7 font-normal;
+        }
+        .sm\:font-lgmedium {
+            @apply font-formular text-lg leading-7 font-medium;
+        }
+        .sm\:font-lgbold {
+            @apply font-formular text-lg leading-7 font-bold;
+        }
+        .sm\:font-lgblack {
+            @apply font-formular text-lg leading-7 font-black;
+        }
+
+        .sm\:font-xllight {
+            @apply font-formular text-xl leading-7 font-light;
+        }
+        .sm\:font-xlregular {
+            @apply font-formular text-xl leading-7 font-normal;
+        }
+        .sm\:font-xlmedium {
+            @apply font-formular text-xl leading-7 font-medium;
+        }
+        .sm\:font-xlbold {
+            @apply font-formular text-xl leading-7 font-bold;
+        }
+        .sm\:font-xlblack {
+            @apply font-formular text-xl leading-7 font-black;
+        }
+
+        .sm\:font-2xllight {
+            @apply font-formular text-2xl leading-8 font-light;
+        }
+        .sm\:font-2xlregular {
+            @apply font-formular text-2xl leading-8 font-normal;
+        }
+        .sm\:font-2xlmedium {
+            @apply font-formular text-2xl leading-8 font-medium;
+        }
+        .sm\:font-2xlbold {
+            @apply font-formular text-2xl leading-8 font-bold;
+        }
+        .sm\:font-2xlblack {
+            @apply font-formular text-2xl leading-8 font-black;
+        }
+
+        .sm\:font-3xllight {
+            @apply font-formular text-3xl leading-9 font-light;
+        }
+        .sm\:font-3xlregular {
+            @apply font-formular text-3xl leading-9 font-normal;
+        }
+        .sm\:font-3xlmedium {
+            @apply font-formular text-3xl leading-9 font-medium;
+        }
+        .sm\:font-3xlbold {
+            @apply font-formular text-3xl leading-9 font-bold;
+        }
+        .sm\:font-3xlblack {
+            @apply font-formular text-3xl leading-9 font-black;
+        }
+
+        .sm\:font-4xllight {
+            @apply font-formular text-4xl leading-10 font-light;
+        }
+        .sm\:font-4xlregular {
+            @apply font-formular text-4xl leading-10 font-normal;
+        }
+        .sm\:font-4xlmedium {
+            @apply font-formular text-4xl leading-10 font-medium;
+        }
+        .sm\:font-4xlbold {
+            @apply font-formular text-4xl leading-10 font-bold;
+        }
+        .sm\:font-4xlblack {
+            @apply font-formular text-4xl leading-10 font-black;
+        }
+
+        .sm\:font-5xllight {
+            @apply font-formular text-5xl leading-none font-light;
+        }
+        .sm\:font-5xlregular {
+            @apply font-formular text-5xl leading-none font-normal;
+        }
+        .sm\:font-5xlmedium {
+            @apply font-formular text-5xl leading-none font-medium;
+        }
+        .sm\:font-5xlbold {
+            @apply font-formular text-5xl leading-none font-bold;
+        }
+        .sm\:font-5xlblack {
+            @apply font-formular text-5xl leading-none font-black;
+        }
+
+        .sm\:font-6xllight {
+            @apply font-formular text-6xl leading-none font-light;
+        }
+        .sm\:font-6xlregular {
+            @apply font-formular text-6xl leading-none font-normal;
+        }
+        .sm\:font-6xlmedium {
+            @apply font-formular text-6xl leading-none font-medium;
+        }
+        .sm\:font-6xlbold {
+            @apply font-formular text-6xl leading-none font-bold;
+        }
+        .sm\:font-6xlblack {
+            @apply font-formular text-6xl leading-none font-black;
+        }
+
+        .sm\:font-7xllight {
+            @apply font-formular text-7xl leading-none font-light;
+        }
+        .sm\:font-7xlregular {
+            @apply font-formular text-7xl leading-none font-normal;
+        }
+        .sm\:font-7xlmedium {
+            @apply font-formular text-7xl leading-none font-medium;
+        }
+        .sm\:font-7xlbold {
+            @apply font-formular text-7xl leading-none font-bold;
+        }
+        .sm\:font-7xlblack {
+            @apply font-formular text-7xl leading-none font-black;
+        }
+
+        .sm\:font-8xllight {
+            @apply font-formular text-8xl leading-none font-light;
+        }
+        .sm\:font-8xlregular {
+            @apply font-formular text-8xl leading-none font-normal;
+        }
+        .sm\:font-8xlmedium {
+            @apply font-formular text-8xl leading-none font-medium;
+        }
+        .sm\:font-8xlbold {
+            @apply font-formular text-8xl leading-none font-bold;
+        }
+        .sm\:font-8xlblack {
+            @apply font-formular text-8xl leading-none font-black;
+        }
+
+        .sm\:font-9xllight {
+            @apply font-formular text-9xl leading-none font-light;
+        }
+        .sm\:font-9xlregular {
+            @apply font-formular text-9xl leading-none font-normal;
+        }
+        .sm\:font-9xlmedium {
+            @apply font-formular text-9xl leading-none font-medium;
+        }
+        .sm\:font-9xlbold {
+            @apply font-formular text-9xl leading-none font-bold;
+        }
+        .sm\:font-9xlblack {
+            @apply font-formular text-9xl leading-none font-black;
         }
     }
 
-    @media (min-width: 90rem) {
-        .lg\:font-heading78px {
-            @apply font-sen text-[78px] font-bold;
+    @media (min-width: 64rem) {
+        .md\:font-xslight {
+            @apply font-formular text-xs leading-4 font-light;
+        }
+
+        .md\:font-xsregular {
+            @apply font-formular text-xs leading-4 font-normal;
+        }
+
+        .md\:font-xsmedium {
+            @apply font-formular text-xs leading-4 font-medium;
+        }
+
+        .md\:font-xsbold {
+            @apply font-formular text-xs leading-4 font-bold;
+        }
+
+        .md\:font-xsblack {
+            @apply font-formular text-xs leading-4 font-black;
+        }
+
+        .md\:font-smlight {
+            @apply font-formular text-sm leading-5 font-light;
+        }
+
+        .md\:font-smregular {
+            @apply font-formular text-sm leading-5 font-normal;
+        }
+
+        .md\:font-smmedium {
+            @apply font-formular text-sm leading-5 font-medium;
+        }
+
+        .md\:font-smbold {
+            @apply font-formular text-sm leading-5 font-bold;
+        }
+
+        .md\:font-smblack {
+            @apply font-formular text-sm leading-5 font-black;
+        }
+
+        .md\:font-baselight {
+            @apply font-formular text-base leading-6 font-light;
+        }
+
+        .md\:font-baseregular {
+            @apply font-formular text-base leading-6 font-normal;
+        }
+
+        .md\:font-basemedium {
+            @apply font-formular text-base leading-6 font-medium;
+        }
+
+        .md\:font-basebold {
+            @apply font-formular text-base leading-6 font-bold;
+        }
+
+        .md\:font-baseblack {
+            @apply font-formular text-base leading-6 font-black;
+        }
+
+        .md\:font-lglight {
+            @apply font-formular text-lg leading-7 font-light;
+        }
+
+        .md\:font-lgregular {
+            @apply font-formular text-lg leading-7 font-normal;
+        }
+
+        .md\:font-lgmedium {
+            @apply font-formular text-lg leading-7 font-medium;
+        }
+
+        .md\:font-lgbold {
+            @apply font-formular text-lg leading-7 font-bold;
+        }
+
+        .md\:font-lgblack {
+            @apply font-formular text-lg leading-7 font-black;
+        }
+
+        .md\:font-xllight {
+            @apply font-formular text-xl leading-7 font-light;
+        }
+
+        .md\:font-xlregular {
+            @apply font-formular text-xl leading-7 font-normal;
+        }
+
+        .md\:font-xlmedium {
+            @apply font-formular text-xl leading-7 font-medium;
+        }
+
+        .md\:font-xlbold {
+            @apply font-formular text-xl leading-7 font-bold;
+        }
+
+        .md\:font-xlblack {
+            @apply font-formular text-xl leading-7 font-black;
+        }
+
+        .md\:font-2xllight {
+            @apply font-formular text-2xl leading-8 font-light;
+        }
+
+        .md\:font-2xlregular {
+            @apply font-formular text-2xl leading-8 font-normal;
+        }
+
+        .md\:font-2xlmedium {
+            @apply font-formular text-2xl leading-8 font-medium;
+        }
+
+        .md\:font-2xlbold {
+            @apply font-formular text-2xl leading-8 font-bold;
+        }
+
+        .md\:font-2xlblack {
+            @apply font-formular text-2xl leading-8 font-black;
+        }
+
+        .md\:font-3xllight {
+            @apply font-formular text-3xl leading-9 font-light;
+        }
+
+        .md\:font-3xlregular {
+            @apply font-formular text-3xl leading-9 font-normal;
+        }
+
+        .md\:font-3xlmedium {
+            @apply font-formular text-3xl leading-9 font-medium;
+        }
+
+        .md\:font-3xlbold {
+            @apply font-formular text-3xl leading-9 font-bold;
+        }
+
+        .md\:font-3xlblack {
+            @apply font-formular text-3xl leading-9 font-black;
+        }
+
+        .md\:font-4xllight {
+            @apply font-formular text-4xl leading-10 font-light;
+        }
+
+        .md\:font-4xlregular {
+            @apply font-formular text-4xl leading-10 font-normal;
+        }
+
+        .md\:font-4xlmedium {
+            @apply font-formular text-4xl leading-10 font-medium;
+        }
+
+        .md\:font-4xlbold {
+            @apply font-formular text-4xl leading-10 font-bold;
+        }
+
+        .md\:font-4xlblack {
+            @apply font-formular text-4xl leading-10 font-black;
+        }
+
+        .md\:font-5xllight {
+            @apply font-formular text-5xl leading-none font-light;
+        }
+
+        .md\:font-5xlregular {
+            @apply font-formular text-5xl leading-none font-normal;
+        }
+
+        .md\:font-5xlmedium {
+            @apply font-formular text-5xl leading-none font-medium;
+        }
+
+        .md\:font-5xlbold {
+            @apply font-formular text-5xl leading-none font-bold;
+        }
+
+        .md\:font-5xlblack {
+            @apply font-formular text-5xl leading-none font-black;
+        }
+
+        .md\:font-6xllight {
+            @apply font-formular text-6xl leading-none font-light;
+        }
+
+        .md\:font-6xlregular {
+            @apply font-formular text-6xl leading-none font-normal;
+        }
+
+        .md\:font-6xlmedium {
+            @apply font-formular text-6xl leading-none font-medium;
+        }
+
+        .md\:font-6xlbold {
+            @apply font-formular text-6xl leading-none font-bold;
+        }
+
+        .md\:font-6xlblack {
+            @apply font-formular text-6xl leading-none font-black;
+        }
+
+        .md\:font-7xllight {
+            @apply font-formular text-7xl leading-none font-light;
+        }
+
+        .md\:font-7xlregular {
+            @apply font-formular text-7xl leading-none font-normal;
+        }
+
+        .md\:font-7xlmedium {
+            @apply font-formular text-7xl leading-none font-medium;
+        }
+
+        .md\:font-7xlbold {
+            @apply font-formular text-7xl leading-none font-bold;
+        }
+
+        .md\:font-7xlblack {
+            @apply font-formular text-7xl leading-none font-black;
+        }
+
+        .md\:font-8xllight {
+            @apply font-formular text-8xl leading-none font-light;
+        }
+
+        .md\:font-8xlregular {
+            @apply font-formular text-8xl leading-none font-normal;
+        }
+
+        .md\:font-8xlmedium {
+            @apply font-formular text-8xl leading-none font-medium;
+        }
+
+        .md\:font-8xlbold {
+            @apply font-formular text-8xl leading-none font-bold;
+        }
+
+        .md\:font-8xlblack {
+            @apply font-formular text-8xl leading-none font-black;
+        }
+
+        .md\:font-9xllight {
+            @apply font-formular text-9xl leading-none font-light;
+        }
+
+        .md\:font-9xlregular {
+            @apply font-formular text-9xl leading-none font-normal;
+        }
+
+        .md\:font-9xlmedium {
+            @apply font-formular text-9xl leading-none font-medium;
+        }
+
+        .md\:font-9xlbold {
+            @apply font-formular text-9xl leading-none font-bold;
+        }
+
+        .md\:font-9xlblack {
+            @apply font-formular text-9xl leading-none font-black;
+        }
+    }
+
+    @media (min-width: 96rem) {
+        .lg\:font-xslight {
+            @apply font-formular text-xs leading-4 font-light;
+        }
+
+        .lg\:font-xsregular {
+            @apply font-formular text-xs leading-4 font-normal;
+        }
+
+        .lg\:font-xsmedium {
+            @apply font-formular text-xs leading-4 font-medium;
+        }
+
+        .lg\:font-xsbold {
+            @apply font-formular text-xs leading-4 font-bold;
+        }
+
+        .lg\:font-xsblack {
+            @apply font-formular text-xs leading-4 font-black;
+        }
+
+        .lg\:font-smlight {
+            @apply font-formular text-sm leading-5 font-light;
+        }
+
+        .lg\:font-smregular {
+            @apply font-formular text-sm leading-5 font-normal;
+        }
+
+        .lg\:font-smmedium {
+            @apply font-formular text-sm leading-5 font-medium;
+        }
+
+        .lg\:font-smbold {
+            @apply font-formular text-sm leading-5 font-bold;
+        }
+
+        .lg\:font-smblack {
+            @apply font-formular text-sm leading-5 font-black;
+        }
+
+        .lg\:font-baselight {
+            @apply font-formular text-base leading-6 font-light;
+        }
+
+        .lg\:font-baseregular {
+            @apply font-formular text-base leading-6 font-normal;
+        }
+
+        .lg\:font-basemedium {
+            @apply font-formular text-base leading-6 font-medium;
+        }
+
+        .lg\:font-basebold {
+            @apply font-formular text-base leading-6 font-bold;
+        }
+
+        .lg\:font-baseblack {
+            @apply font-formular text-base leading-6 font-black;
+        }
+
+        .lg\:font-lglight {
+            @apply font-formular text-lg leading-7 font-light;
+        }
+
+        .lg\:font-lgregular {
+            @apply font-formular text-lg leading-7 font-normal;
+        }
+
+        .lg\:font-lgmedium {
+            @apply font-formular text-lg leading-7 font-medium;
+        }
+
+        .lg\:font-lgbold {
+            @apply font-formular text-lg leading-7 font-bold;
+        }
+
+        .lg\:font-lgblack {
+            @apply font-formular text-lg leading-7 font-black;
+        }
+
+        .lg\:font-xllight {
+            @apply font-formular text-xl leading-7 font-light;
+        }
+
+        .lg\:font-xlregular {
+            @apply font-formular text-xl leading-7 font-normal;
+        }
+
+        .lg\:font-xlmedium {
+            @apply font-formular text-xl leading-7 font-medium;
+        }
+
+        .lg\:font-xlbold {
+            @apply font-formular text-xl leading-7 font-bold;
+        }
+
+        .lg\:font-xlblack {
+            @apply font-formular text-xl leading-7 font-black;
+        }
+
+        .lg\:font-2xllight {
+            @apply font-formular text-2xl leading-8 font-light;
+        }
+
+        .lg\:font-2xlregular {
+            @apply font-formular text-2xl leading-8 font-normal;
+        }
+
+        .lg\:font-2xlmedium {
+            @apply font-formular text-2xl leading-8 font-medium;
+        }
+
+        .lg\:font-2xlbold {
+            @apply font-formular text-2xl leading-8 font-bold;
+        }
+
+        .lg\:font-2xlblack {
+            @apply font-formular text-2xl leading-8 font-black;
+        }
+
+        .lg\:font-3xllight {
+            @apply font-formular text-3xl leading-9 font-light;
+        }
+
+        .lg\:font-3xlregular {
+            @apply font-formular text-3xl leading-9 font-normal;
+        }
+
+        .lg\:font-3xlmedium {
+            @apply font-formular text-3xl leading-9 font-medium;
+        }
+
+        .lg\:font-3xlbold {
+            @apply font-formular text-3xl leading-9 font-bold;
+        }
+
+        .lg\:font-3xlblack {
+            @apply font-formular text-3xl leading-9 font-black;
+        }
+
+        .lg\:font-4xllight {
+            @apply font-formular text-4xl leading-10 font-light;
+        }
+
+        .lg\:font-4xlregular {
+            @apply font-formular text-4xl leading-10 font-normal;
+        }
+
+        .lg\:font-4xlmedium {
+            @apply font-formular text-4xl leading-10 font-medium;
+        }
+
+        .lg\:font-4xlbold {
+            @apply font-formular text-4xl leading-10 font-bold;
+        }
+
+        .lg\:font-4xlblack {
+            @apply font-formular text-4xl leading-10 font-black;
+        }
+
+        .lg\:font-5xllight {
+            @apply font-formular text-5xl leading-none font-light;
+        }
+
+        .lg\:font-5xlregular {
+            @apply font-formular text-5xl leading-none font-normal;
+        }
+
+        .lg\:font-5xlmedium {
+            @apply font-formular text-5xl leading-none font-medium;
+        }
+
+        .lg\:font-5xlbold {
+            @apply font-formular text-5xl leading-none font-bold;
+        }
+
+        .lg\:font-5xlblack {
+            @apply font-formular text-5xl leading-none font-black;
+        }
+
+        .lg\:font-6xllight {
+            @apply font-formular text-6xl leading-none font-light;
+        }
+
+        .lg\:font-6xlregular {
+            @apply font-formular text-6xl leading-none font-normal;
+        }
+
+        .lg\:font-6xlmedium {
+            @apply font-formular text-6xl leading-none font-medium;
+        }
+
+        .lg\:font-6xlbold {
+            @apply font-formular text-6xl leading-none font-bold;
+        }
+
+        .lg\:font-6xlblack {
+            @apply font-formular text-6xl leading-none font-black;
+        }
+
+        .lg\:font-7xllight {
+            @apply font-formular text-7xl leading-none font-light;
+        }
+
+        .lg\:font-7xlregular {
+            @apply font-formular text-7xl leading-none font-normal;
+        }
+
+        .lg\:font-7xlmedium {
+            @apply font-formular text-7xl leading-none font-medium;
+        }
+
+        .lg\:font-7xlbold {
+            @apply font-formular text-7xl leading-none font-bold;
+        }
+
+        .lg\:font-7xlblack {
+            @apply font-formular text-7xl leading-none font-black;
+        }
+
+        .lg\:font-8xllight {
+            @apply font-formular text-8xl leading-none font-light;
+        }
+
+        .lg\:font-8xlregular {
+            @apply font-formular text-8xl leading-none font-normal;
+        }
+
+        .lg\:font-8xlmedium {
+            @apply font-formular text-8xl leading-none font-medium;
+        }
+
+        .lg\:font-8xlbold {
+            @apply font-formular text-8xl leading-none font-bold;
+        }
+
+        .lg\:font-8xlblack {
+            @apply font-formular text-8xl leading-none font-black;
+        }
+
+        .lg\:font-9xllight {
+            @apply font-formular text-9xl leading-none font-light;
+        }
+
+        .lg\:font-9xlregular {
+            @apply font-formular text-9xl leading-none font-normal;
+        }
+
+        .lg\:font-9xlmedium {
+            @apply font-formular text-9xl leading-none font-medium;
+        }
+
+        .lg\:font-9xlbold {
+            @apply font-formular text-9xl leading-none font-bold;
+        }
+
+        .lg\:font-9xlblack {
+            @apply font-formular text-9xl leading-none font-black;
+        }
+    }
+
+    @media (min-width: 120rem) {
+        .xl\:font-xslight {
+            @apply font-formular text-xs leading-4 font-light;
+        }
+        .xl\:font-xsregular {
+            @apply font-formular text-xs leading-4 font-normal;
+        }
+        .xl\:font-xsmedium {
+            @apply font-formular text-xs leading-4 font-medium;
+        }
+        .xl\:font-xsbold {
+            @apply font-formular text-xs leading-4 font-bold;
+        }
+        .xl\:font-xsblack {
+            @apply font-formular text-xs leading-4 font-black;
+        }
+        .xl\:font-smlight {
+            @apply font-formular text-sm leading-5 font-light;
+        }
+        .xl\:font-smregular {
+            @apply font-formular text-sm leading-5 font-normal;
+        }
+        .xl\:font-smmedium {
+            @apply font-formular text-sm leading-5 font-medium;
+        }
+        .xl\:font-smbold {
+            @apply font-formular text-sm leading-5 font-bold;
+        }
+        .xl\:font-smblack {
+            @apply font-formular text-sm leading-5 font-black;
+        }
+        .xl\:font-baselight {
+            @apply font-formular text-base leading-6 font-light;
+        }
+        .xl\:font-baseregular {
+            @apply font-formular text-base leading-6 font-normal;
+        }
+        .xl\:font-basemedium {
+            @apply font-formular text-base leading-6 font-medium;
+        }
+        .xl\:font-basebold {
+            @apply font-formular text-base leading-6 font-bold;
+        }
+        .xl\:font-baseblack {
+            @apply font-formular text-base leading-6 font-black;
+        }
+        .xl\:font-lglight {
+            @apply font-formular text-lg leading-7 font-light;
+        }
+        .xl\:font-lgregular {
+            @apply font-formular text-lg leading-7 font-normal;
+        }
+        .xl\:font-lgmedium {
+            @apply font-formular text-lg leading-7 font-medium;
+        }
+        .xl\:font-lgbold {
+            @apply font-formular text-lg leading-7 font-bold;
+        }
+        .xl\:font-lgblack {
+            @apply font-formular text-lg leading-7 font-black;
+        }
+        .xl\:font-xllight {
+            @apply font-formular text-xl leading-7 font-light;
+        }
+        .xl\:font-xlregular {
+            @apply font-formular text-xl leading-7 font-normal;
+        }
+        .xl\:font-xlmedium {
+            @apply font-formular text-xl leading-7 font-medium;
+        }
+        .xl\:font-xlbold {
+            @apply font-formular text-xl leading-7 font-bold;
+        }
+        .xl\:font-xlblack {
+            @apply font-formular text-xl leading-7 font-black;
+        }
+        .xl\:font-2xllight {
+            @apply font-formular text-2xl leading-8 font-light;
+        }
+        .xl\:font-2xlregular {
+            @apply font-formular text-2xl leading-8 font-normal;
+        }
+        .xl\:font-2xlmedium {
+            @apply font-formular text-2xl leading-8 font-medium;
+        }
+        .xl\:font-2xlbold {
+            @apply font-formular text-2xl leading-8 font-bold;
+        }
+        .xl\:font-2xlblack {
+            @apply font-formular text-2xl leading-8 font-black;
+        }
+        .xl\:font-3xllight {
+            @apply font-formular text-3xl leading-9 font-light;
+        }
+        .xl\:font-3xlregular {
+            @apply font-formular text-3xl leading-9 font-normal;
+        }
+        .xl\:font-3xlmedium {
+            @apply font-formular text-3xl leading-9 font-medium;
+        }
+        .xl\:font-3xlbold {
+            @apply font-formular text-3xl leading-9 font-bold;
+        }
+        .xl\:font-3xlblack {
+            @apply font-formular text-3xl leading-9 font-black;
+        }
+        .xl\:font-4xllight {
+            @apply font-formular text-4xl leading-10 font-light;
+        }
+        .xl\:font-4xlregular {
+            @apply font-formular text-4xl leading-10 font-normal;
+        }
+        .xl\:font-4xlmedium {
+            @apply font-formular text-4xl leading-10 font-medium;
+        }
+        .xl\:font-4xlbold {
+            @apply font-formular text-4xl leading-10 font-bold;
+        }
+        .xl\:font-4xlblack {
+            @apply font-formular text-4xl leading-10 font-black;
+        }
+        .xl\:font-5xllight {
+            @apply font-formular text-5xl leading-none font-light;
+        }
+        .xl\:font-5xlregular {
+            @apply font-formular text-5xl leading-none font-normal;
+        }
+        .xl\:font-5xlmedium {
+            @apply font-formular text-5xl leading-none font-medium;
+        }
+        .xl\:font-5xlbold {
+            @apply font-formular text-5xl leading-none font-bold;
+        }
+        .xl\:font-5xlblack {
+            @apply font-formular text-5xl leading-none font-black;
+        }
+        .xl\:font-6xllight {
+            @apply font-formular text-6xl leading-none font-light;
+        }
+        .xl\:font-6xlregular {
+            @apply font-formular text-6xl leading-none font-normal;
+        }
+        .xl\:font-6xlmedium {
+            @apply font-formular text-6xl leading-none font-medium;
+        }
+        .xl\:font-6xlbold {
+            @apply font-formular text-6xl leading-none font-bold;
+        }
+        .xl\:font-6xlblack {
+            @apply font-formular text-6xl leading-none font-black;
+        }
+        .xl\:font-7xllight {
+            @apply font-formular text-7xl leading-none font-light;
+        }
+        .xl\:font-7xlregular {
+            @apply font-formular text-7xl leading-none font-normal;
+        }
+        .xl\:font-7xlmedium {
+            @apply font-formular text-7xl leading-none font-medium;
+        }
+        .xl\:font-7xlbold {
+            @apply font-formular text-7xl leading-none font-bold;
+        }
+        .xl\:font-7xlblack {
+            @apply font-formular text-7xl leading-none font-black;
+        }
+        .xl\:font-8xllight {
+            @apply font-formular text-8xl leading-none font-light;
+        }
+        .xl\:font-8xlregular {
+            @apply font-formular text-8xl leading-none font-normal;
+        }
+        .xl\:font-8xlmedium {
+            @apply font-formular text-8xl leading-none font-medium;
+        }
+        .xl\:font-8xlbold {
+            @apply font-formular text-8xl leading-none font-bold;
+        }
+        .xl\:font-8xlblack {
+            @apply font-formular text-8xl leading-none font-black;
+        }
+        .xl\:font-9xllight {
+            @apply font-formular text-9xl leading-none font-light;
+        }
+        .xl\:font-9xlregular {
+            @apply font-formular text-9xl leading-none font-normal;
+        }
+        .xl\:font-9xlmedium {
+            @apply font-formular text-9xl leading-none font-medium;
+        }
+        .xl\:font-9xlbold {
+            @apply font-formular text-9xl leading-none font-bold;
+        }
+        .xl\:font-9xlblack {
+            @apply font-formular text-9xl leading-none font-black;
         }
     }
 }
