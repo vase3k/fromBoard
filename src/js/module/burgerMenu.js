@@ -6,6 +6,7 @@ function burgerMenu() {
 
     burger.addEventListener("click", () => {
         menu.toggleAttribute("data-active");
+        burger.toggleAttribute("data-active");
     });
 }
 

@@ -7,7 +7,10 @@
         <title>FromBoard Delivery</title>
     </head>
     <body>
-        <header class="overflow-hidden rounded-b-2xl bg-sky py-2">
+        <header
+            id="burger__menu"
+            class="h-[90px] overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:h-[254px] data-active:py-6"
+        >
             <div class="container">
                 <div
                     class="grid grid-cols-[max-content_max-content_1fr_max-content] items-center justify-items-end"
@@ -31,26 +34,21 @@
                         class="group relative h-4 w-6 *:absolute *:h-1 *:w-6 *:rounded-sm *:bg-siren *:transition-all *:duration-500"
                     >
                         <div
-                            class="top-0 group-hover:top-1/2 group-hover:-translate-y-1/2 group-hover:rotate-45"
+                            class="top-0 group-data-active:top-1/2 group-data-active:-translate-y-1/2 group-data-active:rotate-45"
                         ></div>
                         <div
-                            class="top-1/2 -translate-y-1/2 group-hover:opacity-0"
+                            class="top-1/2 -translate-y-1/2 group-data-active:opacity-0"
                         ></div>
                         <div
-                            class="bottom-0 group-hover:bottom-1/2 group-hover:translate-y-1/2 group-hover:-rotate-45"
+                            class="bottom-0 group-data-active:bottom-1/2 group-data-active:translate-y-1/2 group-data-active:-rotate-45"
                         ></div>
                     </div>
                 </div>
 
-                <div
-                    id="burger__menu"
-                    class="group max-h-36 pt-3 pb-6 transition-all duration-500 data-active:max-h-0 data-active:pt-0 data-active:pb-0"
-                >
-                    <div
-                        class="h-0.5 rounded-xs bg-siren text-main group-data-active:opacity-0"
-                    ></div>
+                <div class="mt-3">
+                    <div class="h-0.5 rounded-xs bg-siren text-main"></div>
                     <ul
-                        class="font-basebold my-3 grid h-11 auto-cols-max grid-flow-col items-center justify-center gap-x-6"
+                        class="font-basebold my-3 grid h-11 auto-cols-max grid-flow-col items-center justify-center gap-x-6 *:hover:text-violet *:active:underline *:active:decoration-dashed *:active:decoration-2 *:active:underline-offset-4"
                     >
                         <li>Калькулятор</li>
                         <li>О нас</li>
@@ -58,7 +56,7 @@
                         <li>Отзывы</li>
                         <li class="h-full">
                             <button
-                                class="h-full w-[196px] rounded-sm bg-violet px-7 py-2.5 text-sky"
+                                class="h-full w-[196px] rounded-sm bg-violet px-7 py-2.5 text-sky transition-colors duration-300 hover:bg-siren"
                             >
                                 Оставить заявку
                             </button>
