@@ -9,11 +9,11 @@
     <body>
         <header
             id="burger__menu"
-            class="max-h-[90px] overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:max-h-[354px] data-active:py-6 data-active:sm:max-h-[254px] md:max-h-[262px] md:py-6 lg:h-auto"
+            class="fixed left-1/2 max-h-[90px] w-full -translate-x-1/2 overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:max-h-[354px] data-active:py-6 data-active:sm:max-h-[254px] md:max-h-[262px] md:py-6 lg:h-auto"
         >
             <div class="wrapper">
                 <div
-                    class="grid grid-flow-col items-center justify-items-end sm:grid-cols-[max-content_max-content_1fr_max-content]"
+                    class="grid grid-flow-col items-center sm:grid-cols-[max-content_max-content_1fr_max-content] sm:justify-items-end"
                 >
                     <img
                         class="mr-1"
@@ -48,7 +48,7 @@
 
                     <div
                         id="burger__close"
-                        class="group relative h-4 w-6 *:absolute *:h-1 *:w-6 *:rounded-sm *:bg-siren *:transition-all *:duration-500 md:hidden"
+                        class="group relative h-4 w-6 justify-self-end *:absolute *:h-1 *:w-6 *:rounded-sm *:bg-siren *:transition-all *:duration-500 sm:justify-self-auto md:hidden"
                     >
                         <div
                             class="top-0 group-data-active:top-1/2 group-data-active:-translate-y-1/2 group-data-active:rotate-45"
@@ -98,7 +98,56 @@
                 </div>
             </div>
         </header>
-        <main></main>
+        <main class="bg-fonce pt-10 md:pt-12 xl:pt-[72px]">
+            <div class="wrapper mt-[90px] md:mt-[262px]">
+                <h1 class="font-3xlblack xl:font-4xlblack">
+                    Без проблемная доставка купленных вещей из США, Европы
+                    и Азии в Россию
+                </h1>
+                <p class="font-xlregular mt-3">
+                    Сэкономьте на покупках и наслаждайтесь мировыми брендами —
+                    наш сервис позволяет вам легко и удобно заказывать товары
+                    со всего мира и получать их в России
+                </p>
+                <img
+                    src="/src/img/hero/hero__main.png"
+                    class="mt-4 rounded-2xl lg:mt-0"
+                    alt="picture with a persone holding a box"
+                />
+                <div class="mt-10 rounded-xl bg-sky py-6 xl:mt-0">
+                    <h2 class="font-3xlbold text-center text-main">
+                        Калькулятор доставки
+                    </h2>
+                    <p class="font-baseregular mt-4 text-center text-main">
+                        Посчитайте, сколько будет стоить перевозка покупки
+                        из зарубежа
+                    </p>
+                    <form
+                        class="font-baseregular mx-auto mt-7 grid max-w-[569px] grid-cols-2 gap-6 *:rounded-sm *:border-second *:not-last:h-12 *:not-last:border-2 *:not-last:p-3 lg:max-w-[606px] xl:max-w-[496px]"
+                    >
+                        <input
+                            type="text"
+                            class="col-span-2"
+                            placeholder="Имя"
+                        />
+                        <input type="text" placeholder="Почта" />
+                        <input type="text" placeholder="Телефон" />
+                        <input type="text" placeholder="Общая площадь, м²" />
+                        <input type="text" placeholder="Вес, кг" />
+                        <input type="text" placeholder="Страна покупки" />
+                        <input type="text" placeholder="Город покупки" />
+                        <input type="text" placeholder="Область доставки" />
+                        <input type="text" placeholder="Город доставки" />
+                        <button
+                            type="button"
+                            class="font-basebold col-span-2 mt-1 h-11 border-0 bg-violet px-7 py-1 text-sky"
+                        >
+                            Заказать расчёт
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
         <footer></footer>
         <script type="module" src="/src/js/script.js"></script>
     </body>
