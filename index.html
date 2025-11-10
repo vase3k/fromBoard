@@ -9,11 +9,11 @@
     <body>
         <header
             id="burger__menu"
-            class="h-[90px] overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:h-[254px] data-active:py-6"
+            class="max-h-[90px] overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:max-h-[254px] data-active:py-6 md:max-h-[262px] md:py-6 lg:h-auto"
         >
-            <div class="container">
+            <div class="wrapper">
                 <div
-                    class="grid grid-cols-[max-content_max-content_1fr_max-content] items-center justify-items-end"
+                    class="grid grid-flow-col items-center justify-items-end sm:grid-cols-[max-content_max-content_1fr_max-content]"
                 >
                     <img
                         class="mr-1"
@@ -21,17 +21,34 @@
                         class="fill-siren"
                         alt="company logo"
                     />
-                    <p class="font-lgblack md:font-2xlblack text-main">
+                    <p
+                        class="font-smblack sm:font-lgblack md:font-2xlblack text-main"
+                    >
                         FromBoard Delivery
                     </p>
-                    <a
-                        class="font-xlblack md:font-2xlblack mr-4"
-                        href="tel:+78001234567"
-                        >+7 (800) 123 45-67</a
+                    <ul
+                        class="font-baseregular hidden border-r border-siren pr-3 text-right lg:block"
                     >
+                        <li>Доставляем товары из заграницы в Россию</li>
+                        <li>Стоимость от 550 рублей за заказ</li>
+                        <li>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</li>
+                    </ul>
+                    <div class="lg:pl-3">
+                        <a
+                            class="font-mdblack sm:font-xlblack md:font-2xlblack lg:font-3xlblack xl:font-4xlblack xl:font-2xllight sm:mr-4 md:mr-0 md:text-right"
+                            href="tel:+78001234567"
+                            >+7 (800) 123 45-67</a
+                        >
+                        <p
+                            class="font-baselight lg:font-xllight mt-1 hidden text-main md:block"
+                        >
+                            Звонки по России бесплатны
+                        </p>
+                    </div>
+
                     <div
                         id="burger__close"
-                        class="group relative h-4 w-6 *:absolute *:h-1 *:w-6 *:rounded-sm *:bg-siren *:transition-all *:duration-500"
+                        class="group relative h-4 w-6 *:absolute *:h-1 *:w-6 *:rounded-sm *:bg-siren *:transition-all *:duration-500 md:hidden"
                     >
                         <div
                             class="top-0 group-data-active:top-1/2 group-data-active:-translate-y-1/2 group-data-active:rotate-45"
@@ -46,9 +63,11 @@
                 </div>
 
                 <div class="mt-3">
-                    <div class="h-0.5 rounded-xs bg-siren text-main"></div>
+                    <div
+                        class="h-0.5 rounded-xs bg-siren text-main lg:hidden"
+                    ></div>
                     <ul
-                        class="font-basebold my-3 grid h-11 auto-cols-max grid-flow-col items-center justify-center gap-x-6 *:hover:text-violet *:active:underline *:active:decoration-dashed *:active:decoration-2 *:active:underline-offset-4"
+                        class="font-xsbold sm:font-basebold my-3 grid h-11 grid-flow-col items-center justify-center gap-x-1 *:hover:text-violet *:active:underline *:active:decoration-dashed *:active:decoration-2 *:active:underline-offset-4 sm:auto-cols-max sm:gap-x-6 md:grid-cols-[max-content_max-content_max-content_1fr_max-content] md:justify-between lg:my-0 lg:mt-6"
                     >
                         <li>Калькулятор</li>
                         <li>О нас</li>
@@ -56,20 +75,22 @@
                         <li>Отзывы</li>
                         <li class="h-full">
                             <button
-                                class="h-full w-[196px] rounded-sm bg-violet px-7 py-2.5 text-sky transition-colors duration-300 hover:bg-siren"
+                                class="h-full rounded-sm bg-violet px-1 py-2.5 text-sky transition-colors duration-300 hover:bg-siren sm:w-[196px] sm:px-7"
                             >
                                 Оставить заявку
                             </button>
                         </li>
                     </ul>
-                    <div class="h-0.5 rounded-xs bg-siren text-main"></div>
+                    <div
+                        class="h-0.5 rounded-xs bg-siren text-main lg:hidden"
+                    ></div>
                     <ul
-                        class="font-smregular mt-3 grid h-10 auto-cols-max grid-flow-col justify-center gap-6 text-center"
+                        class="font-xsregular sm:font-smregular mt-3 grid h-10 justify-center gap-1 text-center sm:auto-cols-max sm:grid-flow-col sm:gap-6 md:mt-4 lg:hidden"
                     >
-                        <li class="max-w-[185px]">
+                        <li class="sm:max-w-[185px]">
                             Доставляем товары из заграницы в Россию
                         </li>
-                        <li class="max-w-[185px]">
+                        <li class="sm:max-w-[185px]">
                             Стоимость от 550 рублей за заказ
                         </li>
                         <li>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</li>

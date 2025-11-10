@@ -51,8 +51,8 @@
 }
 
 @layer components {
-    .container {
-        @apply mx-auto px-2.5 sm:max-w-[640px] md:max-w-3xl lg:max-w-[1026px] xl:max-w-[1536px];
+    .wrapper {
+        @apply mx-auto px-2.5 sm:max-w-[640px] sm:px-0 md:max-w-3xl lg:max-w-5xl xl:max-w-[1536px];
     }
 
     .font-xslight {
