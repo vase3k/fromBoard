@@ -9,7 +9,7 @@
     <body>
         <header
             id="burger__menu"
-            class="fixed left-1/2 max-h-[90px] w-full -translate-x-1/2 overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:max-h-[354px] data-active:py-6 data-active:sm:max-h-[254px] md:max-h-[262px] md:py-6 lg:h-auto"
+            class="fixed left-1/2 z-2 max-h-[90px] w-full -translate-x-1/2 overflow-hidden rounded-b-2xl bg-sky py-2 transition-all duration-500 data-active:max-h-[354px] data-active:py-6 data-active:sm:max-h-[254px] md:max-h-[262px] md:py-6 lg:h-auto"
         >
             <div class="wrapper">
                 <div
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </header>
-        <main class="bg-fonce pt-10 md:pt-12 xl:pt-[72px]">
+        <main class="bg-fonce pt-10 pb-12 md:pt-12 xl:pt-[72px] xl:pb-[72px]">
             <div class="wrapper mt-[90px] md:mt-[262px] lg:mt-[190px] xl:mt-48">
                 <div class="xl:grid xl:grid-cols-2 xl:gap-x-6">
                     <div
@@ -486,24 +486,56 @@
                     </div>
                     <div
                         id="swiper__prev"
-                        class="swiper-button-prev absolute top-[76px] z-1 md:top-12 lg:top-[74px] xl:top-[111px]"
+                        class="swiper-button-prev absolute top-1 right-2 z-1 -translate-x-full sm:top-[76px] sm:left-0 sm:translate-x-0 md:top-12 lg:top-[74px] xl:top-[111px]"
                     >
                         <img
-                            class="aspect-square w-[60px] rotate-180"
+                            class="aspect-square w-8 rotate-180 sm:w-[60px]"
                             src="/src/img/slider/slider__next.svg"
                             alt="prev"
                         />
                     </div>
                     <div
                         id="swiper__next"
-                        class="swiper-button-next absolute top-[76px] right-0 z-1 md:top-12 lg:top-[74px] xl:top-[111px]"
+                        class="swiper-button-next absolute top-1 right-1 z-1 sm:top-[76px] sm:right-0 md:top-12 lg:top-[74px] xl:top-[111px]"
                     >
                         <img
                             src="/src/img/slider/slider__next.svg"
                             alt="next"
-                            class="aspect-square w-[60px]"
+                            class="aspect-square w-8 sm:w-[60px]"
                         />
                     </div>
+                </div>
+
+                <div class="mt-12 rounded-xl bg-sky p-4 sm:p-16 xl:mt-[72px]">
+                    <h2 class="font-3xlblack text-center text-main">
+                        Остались вопросы?
+                    </h2>
+
+                    <form
+                        class="font-baseregular mx-auto mt-8 grid max-w-[497px] gap-x-6 px-1 *:rounded-sm *:border-second *:not-last:mt-6 *:not-last:border-2 *:not-last:p-3 sm:grid-cols-2 sm:px-0"
+                    >
+                        <input type="text" placeholder="Имя" class="h-12" />
+                        <input type="text" placeholder="Почта" class="h-12" />
+                        <input type="text" placeholder="Телефон" class="h-12" />
+                        <input
+                            type="text"
+                            placeholder="Тема вопроса"
+                            class="h-12"
+                        />
+                        <textarea
+                            name=""
+                            id=""
+                            class="h-[150px] resize-none sm:col-span-2"
+                            placeholder="Сообщение..."
+                        ></textarea>
+
+                        <button
+                            type="button"
+                            class="font-basebold mt-5 h-11 border-0 bg-violet px-7 py-1 text-sky hover:bg-siren sm:col-span-2"
+                        >
+                            Оставить заявку
+                        </button>
+                    </form>
                 </div>
             </div>
         </main>
