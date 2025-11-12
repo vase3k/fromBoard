@@ -55,10 +55,10 @@ export default defineConfig({
             description: "FromBoard Delivery",
             url: "https://fromBoard.by/",
             img: "/images/meta-og-image.jpg",
-            color: "#ffffff",
+            color: "#f9fafb",
         }),
         vitePluginFaviconsInject("src/favicon/favicon.png", {
-            background: "#fff",
+            background: "#f9fafb",
             path: "assets/fav",
             icons: {
                 android: true,
@@ -78,8 +78,8 @@ export default defineConfig({
             quality: 80,
             excludeFolder: ["images"],
         }),
-        // legacy({
-        // 	targets: ["defaults"],
-        // }),
+        legacy({
+            targets: ["defaults"],
+        }),
     ],
 });
