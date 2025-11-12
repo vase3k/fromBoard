@@ -2,7 +2,7 @@
   "version": "1.0",
   "api_version": 1,
   "layout": {
-    "logo": "/fromBoard/assets/yandex-browser-50x50.png",
+    "logo": "/fromBoard/dist/assets/yandex-browser-50x50.png",
     "color": "#f9fafb",
     "show_title": true
   }
